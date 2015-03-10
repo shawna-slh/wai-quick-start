@@ -1,0 +1,1 @@
+!function(){"use strict";var e=document.querySelectorAll("a.view-menu");e[0].addEventListener("click",function(){for(var e=document.querySelectorAll("body, #sitenav"),t=0;t<e.length;t++){var l="20em"===e[t].style.left?"0em":"20em";Velocity(e[t],{left:l},{duration:300})}})}();
