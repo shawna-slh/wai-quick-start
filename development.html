@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>
-  Accessibility tips for authoring content
+  Accessibility tips for development
   &bull; Quick Start Guides &bull; WAI
   </title>
   <meta name="viewport" content="width=device-width">
-  <link href="../stylesheets/main-a8eef3a4.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-a8eef3a4.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <script src="../javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
+  <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
 </head>
-<body class="quickstart quickstart_content  editors-draft">
+<body class="development  editors-draft">
 
   <header>
   	<ul id="controls">
@@ -37,7 +37,7 @@
     <a href="/WAI/">Web Accessibility Initiative (WAI) Home</a>
   </p>
   <ol id="nav1">
-    <li class="current-nav"><a class="" href="index.html">Getting Started</a>
+    <li class="current-nav"><a href="../gettingstarted/Overview.html">Getting Started</a>
       <ul>
         <li class="nav-head">Using the Web
           <ol>
@@ -53,14 +53,14 @@
             <li><a href="../bcase/Overview.html">Business Case</a></li>
           </ol>
         </li>
-        <li class="nav-head">Quick Start Tips
+        <li class="nav-head"><a class="" href="./">Quick Start Tips</a>
           <ol>
-            <li><a href="/quickstart/design.html">Design</a></li>
-            <li><a href="/quickstart/development.html">Development</a></li>
-            <li><a href="/quickstart/content.html">Content</a></li>
-            <li><a href="/quickstart/evaluation.html">Evaluation</a></li>
-            <li><a href="/quickstart/project_management.html">Project Management</a></li>
-            <li><a href="/quickstart/advocacy.html">Advocacy</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li id="current-node" class="current-nav"><span class="label"><span id="current-icon">»</span>Development</span></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="project_management.html">Project Management</a></li>
+            <li><a href="advocacy.html">Advocacy</a></li>
           </ol>
         </li>
       </ul>
@@ -93,46 +93,57 @@
 
   <header class="heading">
     <h1>
-      Accessibility tips for authoring content
+      Accessibility tips for development
     </h1>
   </header>
 
   <div class="inner">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-<h2 class="attach_permalink" id="provide-alternative-text-for-all-images">Provide alternative text for all images</h2>
-
-<p>FDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<h2 class="attach_permalink" id="keep-it-short-and-simple">Keep it short and simple</h2>
+<h2 class="attach_permalink" id="ensure-good-semantic-mark-up-eg-if-it-looks-like-a-header-mark-it-up-with-a-header-element">Ensure good semantic mark-up; e.g. if it looks like a header, mark it up with a header element</h2>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<h2 class="attach_permalink" id="make-all-links-clear-for-example-avoid-using-click-here-or-more">Make all links clear, for example, avoid using 'click here' or 'more'</h2>
+<h2 class="attach_permalink" id="associate-a-label-with-all-form-elements">Associate a label with all form elements</h2>
+
+<p>Associate the <code>&lt;label&gt;</code> element with form elements using the <em>for</em> and <em>id</em> attributes. If there is not a visible label, provide a label and position it offscreen using CSS. </p>
+
+<aside class="learn_more"><h3>Example</h3>
+
+<pre><code>&lt;label for="username"&gt;
+&lt;input id="username" type="text"&gt;
+</code></pre>
+
+</aside>
+
+<aside class="learn_more"><h3>Learn more</h3>
+
+<ul>
+  <li><a href="http://www.w3.org/WAI/tutorials/forms/labels/">Labelling controls - Tutorial page</a>: Provides details on how to label form controls and elements</li>
+  <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">Understanding SC 3.3.2 Labels or Instructions</a>: WCAG 2.0 Success Criteria 3.3.2 for labels</li>
+  <li><a href="http://www.w3.org/WAI/intro/people-use-web/browsing#navigation">Design solutions - navigating and finding content</a>: Explores how providing labels benefits people with disabilities
+
+</aside>
+  </li>
+</ul>
+
+<h2 class="attach_permalink" id="use-html5-structural-elements">Use HTML5 structural elements</h2>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<h2 class="attach_permalink" id="provide-short-meaningful-headings-to-break-up-long-text-blocks">Provide short, meaningful headings to break-up long text blocks</h2>
+<h2 class="attach_permalink" id="match-the-reading-order-and-the-code-order">Match the reading order and the code order</h2>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<h2 class="attach_permalink" id="ensure-that-transcripts-and-captions-are-provided-for-audiovisual-content">Ensure that transcripts and captions are provided for audio/visual content</h2>
+<h2 class="attach_permalink" id="use-aria-to-provide-meaning-to-non-standard-interactive-elements">Use ARIA to provide meaning to non-standard interactive elements</h2>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<h2 class="attach_permalink" id="avoid-using-complex-words-and-sentence-structures">Avoid using complex words and sentence structures</h2>
+<h2 class="attach_permalink" id="ensure-that-all-interactive-elements-are-keyboard-accessible">Ensure that all interactive elements are keyboard accessible</h2>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<h2 class="attach_permalink" id="ensure-all-pages-are-provided-with-a-meaningful-title">Ensure all pages are provided with a meaningful title</h2>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<h2 class="attach_permalink" id="file-download-link-text-should-include-file-type-and-size">File download link text should include file type and size</h2>
-
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<h2 class="attach_permalink" id="expand-all-acronyms-on-their-first-use">Expand all acronyms on their first use</h2>
+<h2 class="attach_permalink" id="check-your-code-validates">Check your code validates</h2>
 
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -183,7 +194,7 @@ The Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EO
 			</div>
     </div>
 	</footer>
-	<script src="../javascripts/main-ea6810c7.js" type="text/javascript"></script>
-  <script src="../javascripts/permalink-0533999e.js" type="text/javascript"></script>
+	<script src="javascripts/main-ea6810c7.js" type="text/javascript"></script>
+  <script src="javascripts/permalink-0533999e.js" type="text/javascript"></script>
 	</body>
 </html>
